@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_NhanVien.fr_hoadon">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="825dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Quản lý hóa đơn"
+            android:textAlignment="center"
+            android:textColor="#FA780613"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+           >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Mã nhân viên"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <Spinner
+                    android:id="@+id/spnnhanvien"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Mã đơn hàng"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <Spinner
+                    android:id="@+id/spnmadh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Ngày lập"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/txtngaylap"
+                    android:layout_width="265dp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Ngày Giao"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/txtngaygiao"
+                    android:layout_width="265dp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Tổng tiền"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/txtTongTien"
+                    android:layout_width="265dp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Chức năng"
+            android:textAlignment="center"
+            android:textColor="#FA780613"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="336dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnThem"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_baseline_add_24"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnXoa"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_baseline_delete_24"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnsua"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_update"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnlammoi"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_baseline_hourglass_empty_24"
+                android:text=""
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnThoat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_baseline_power_settings_new_24"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textAlignment="center">
+
+            <Button
+                android:id="@+id/btnChiTietHD"
+                android:layout_width="201dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="#0A9DE1"
+                android:drawableStart="@drawable/ic_baseline_preview_24"
+                android:text="Chi tiết hóa đơn"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Danh sách "
+            android:textAlignment="center"
+            android:textColor="#FA780613"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/lsv"
+            android:layout_width="395dp"
+            android:layout_height="345dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

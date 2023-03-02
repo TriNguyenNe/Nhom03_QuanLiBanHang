@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="404dp"
+    android:layout_height="785dp"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_smartphone"
+    tools:context=".Activity_KhachHang.Home_khachhang">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="404dp"
+        android:layout_height="785dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Chào mừng bạn đến với WinMart"
+                    android:textAlignment="center"
+                    android:textColor="#9F0303"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                  />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crd"
+                    app:cardCornerRadius="30dp"
+                    android:layout_width="400dp"
+                    android:layout_height="196dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    >
+
+                    <ViewFlipper
+
+                        android:id="@+id/vfSlider"
+                        android:layout_width="400dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center_horizontal"
+
+                        tools:ignore="MissingConstraints">
+
+                    </ViewFlipper>
+
+                </androidx.cardview.widget.CardView>
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/search"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="24dp"
+                 />
+
+            <TextView
+                android:id="@+id/txtdsp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="18dp"
+                android:text="Danh sách sản phẩm"
+                android:textAlignment="center"
+                android:textColor="@color/purple_700"
+                android:textSize="20dp"
+
+                android:textStyle="bold"
+               />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rclv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+
+                        android:layout_marginBottom="20dp"
+                        android:paddingBottom="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

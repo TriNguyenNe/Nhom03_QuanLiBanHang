@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="404dp"
+    android:layout_height="785dp"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity_KhachHang.Fr_thongtinkh">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="404dp"
+        android:layout_height="785dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+       >
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin về bạn"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/ic_baseline_account_circle_24"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="548dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mã khách hàng:"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#2F5AF4"/>
+                <TextView
+                    android:textStyle="bold|italic"
+                    android:text="mã khách"
+                    android:layout_margin="10dp"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtMaKH"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tên khách hàng:"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#2F5AF4"/>
+                <TextView
+                    android:textStyle="bold|italic"
+                    android:text="Tên khách"
+                    android:layout_margin="10dp"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTenKH"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày sinh:"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#2F5AF4"/>
+                <TextView
+                    android:textStyle="bold|italic"
+                    android:text="tên khách hàng"
+                    android:layout_margin="10dp"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtNgaysinh"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TextView android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Thông tin liên hệ"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#2F5AF4"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_location_on_24"/>
+                <TextView android:layout_width="200dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/txtDiaChi"
+                    android:layout_height="wrap_content"
+                    android:text="Địa chỉ"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#000412"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_add_ic_call_24"/>
+                <TextView android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:id="@+id/txtsdt"
+                    android:layout_height="wrap_content"
+                    android:text="Địa chỉ"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#000412"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <Button android:id="@+id/btndoipass"
+                    android:text="Đổi mật khẩu"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:background="#EDF188"/>
+
+                <Button
+                    android:id="@+id/btndangxuat"
+                    android:layout_width="159dp"
+                    android:layout_margin="10dp"
+                    android:background="#EDF188"
+                    android:text="Đăng xuất"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</FrameLayout>

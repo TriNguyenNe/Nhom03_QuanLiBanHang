@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bogoc"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    >
+
+    <LinearLayout
+        android:background="@drawable/bogoc"
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bogoc"
+            android:text="Thông tin nhân viên"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Mã nhân viên"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/txtMaNV"
+
+                    android:layout_width="265dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Họ tên"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <EditText android:id="@+id/txtHoTen" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Chức vụ"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <Spinner
+                    android:id="@+id/spnchucvu"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Ngày sinh"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/ngaysinh"
+
+                    android:layout_width="265dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Địa chỉ"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/txtDiachi"
+                    android:layout_width="265dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Giới tính"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdbnam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nam" />
+
+                    <RadioButton
+                        android:id="@+id/rdbnu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nữ" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Số điện thoại"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/txtsdtnv"
+
+                    android:layout_width="265dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Email"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/txtemailnv"
+
+                    android:layout_width="265dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Mật khẩu"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/txtpass"
+
+                    android:layout_width="265dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Chức năng"
+            android:textAlignment="center"
+            android:textColor="#FA780613"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnThem"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_baseline_add_24"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnsua"
+                android:layout_width="50dp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_update"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btnlammoi"
+                android:layout_width="50dp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_baseline_hourglass_empty_24"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btnThoat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_baseline_power_settings_new_24"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

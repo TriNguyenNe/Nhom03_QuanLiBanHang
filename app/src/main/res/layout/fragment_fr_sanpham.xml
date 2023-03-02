@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_NhanVien.fr_sanpham">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Sản phẩm"
+            android:textAlignment="center"
+            android:textColor="#FA780613"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+           >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Mã mặt hàng"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/txtMaMH"
+                    android:layout_width="265dp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Tên mặt hàng"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/txttenMH"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Đơn vị tính"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <Spinner
+                    android:id="@+id/spnDVT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Đơn giá"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/txtdongia"
+                    android:layout_width="265dp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Số lượng"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/txtsoluongton"
+                    android:layout_width="265dp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Mã loại hàng"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <Spinner
+                    android:id="@+id/spnmlh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Mã nhà cung cấp"
+                    android:textColor="#01020C"
+                    android:textSize="13dp" />
+
+                <Spinner
+                    android:id="@+id/spnmncc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:text="Chọn ảnh"
+                    android:textColor="#01020C"
+                    android:textSize="13dp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/txtid_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Chức năng"
+            android:textAlignment="center"
+            android:textColor="#FA780613"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnThem"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_baseline_add_24"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnsua"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_update"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnlammoi"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_baseline_hourglass_empty_24"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnThoat"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_baseline_power_settings_new_24"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Danh sách "
+            android:textAlignment="center"
+            android:textColor="#FA780613"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/lsv"
+            android:layout_width="match_parent"
+            android:layout_height="254dp" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFBC564D">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="366dp"
+        android:layout_height="666dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/toolbar_signup"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="Đăng kí tài khoản"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textintputma"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:hint="Tạo mã của bạn"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:hintTextColor="@color/white"
+                app:placeholderTextColor="#00FBFAFA"
+                app:startIconDrawable="@drawable/icon_viet"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="499dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textintputhoten"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:hint="Họ và tên"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:hintTextColor="@color/white"
+                app:placeholderTextColor="#00FBFAFA"
+                app:startIconDrawable="@drawable/icon_viet"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="499dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textintputngaysinh"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:hint="Ngày sinh"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:hintTextColor="@color/white"
+                app:placeholderTextColor="#00FBFAFA"
+                app:startIconDrawable="@drawable/ic_baseline_calendar_month_24"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="499dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textintputdiachi"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:hint="Địa chỉ"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:hintTextColor="@color/white"
+                app:placeholderTextColor="#00FBFAFA"
+                app:startIconDrawable="@drawable/ic_baseline_location_on_24"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="499dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textintputsdt"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:hint="Số điện thoại"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:hintTextColor="@color/white"
+                app:placeholderTextColor="#00FBFAFA"
+                app:startIconDrawable="@drawable/ic_baseline_add_ic_call_24"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="499dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textintputpass"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:hint="Mật khẩu"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:hintTextColor="@color/white"
+                app:placeholderTextColor="#00FBFAFA"
+                app:startIconDrawable="@drawable/ic_baseline_lock_24"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="499dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btndangki"
+                    android:layout_width="150dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+
+                    android:background="@drawable/bogoc_btn"
+                    android:text="Đăng kí"
+                    android:textSize="16dp"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@+id/btnquayve"
+                    android:layout_width="150dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bogoc_btn"
+                    android:text="Quay về"
+                    android:textSize="16dp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
